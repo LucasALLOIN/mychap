@@ -1,0 +1,14 @@
+*~
+*#
+\#*#
+\#*
+*.o
+*.a
+*.out
+*.editorconfig
+*.gcda
+*.gcno
+vgcore*
+client
+cmake-build-debug
+.idea
