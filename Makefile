@@ -7,7 +7,11 @@
 
 CC	=	gcc
 
-SRC	=	sources/main.c
+SRC	=	sources/main.c 					\
+		sources/args.c 					\
+		sources/udp_manager.c 			\
+		sources/udp_socket_builder.c 	\
+		sources/utils.c
 
 CFLAGS	=	-I./includes/ -Werror -Wextra -W -Wall -Wparentheses -Wsign-compare -Wpointer-sign -Wuninitialized -Wunused-but-set-variable -g
 
