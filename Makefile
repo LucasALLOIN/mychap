@@ -19,7 +19,7 @@ NAME	=	client
 all:	$(NAME)
 
 $(NAME):	$(OBJ)
-	@$(CC) -o $(NAME)	$(OBJ)
+	@$(CC) -o $(NAME) -lcrypto $(OBJ)
 
 clean:
 	rm -f $(OBJ)

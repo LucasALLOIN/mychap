@@ -12,3 +12,4 @@ vgcore*
 client
 cmake-build-debug
 .idea
+mychap_server
