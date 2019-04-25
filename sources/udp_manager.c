@@ -40,8 +40,8 @@ udp_data_t *receive_udp_socket(udp_socket_t *this)
         delete_udp_data(res);
         return (NULL);
     }
-    if (((udphdr_t *) (res->data +
-    sizeof(iphdr_t)))->uh_sport == this->source_port) {
+    if (((udphdr_t *)
+    (res->data + sizeof(iphdr_t)))->uh_dport != this->source_port) {
         delete_udp_data(res);
         return (receive_udp_socket(this));
     }
